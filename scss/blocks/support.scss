@@ -1,0 +1,85 @@
+.support {
+  padding: 70px 0 50px 0;
+  margin: 0 auto;
+  background-color: $bacgrounColor;
+  .container {
+    @include container();
+    .support-tech {
+      width: $width;
+      height: 300px;
+      border: $border;
+      padding-top: 20px;
+      padding-left: 20px;
+      border: 1px solid #d7ddea;
+      border-radius: 4px;
+      position: relative;
+      .support-tech_title {
+        padding-bottom: 20px;
+        font-size: 28px;
+
+        .span {
+          color: rgba(44, 173, 98, 1);
+          font-size: 25px;
+        }
+        @include h2();
+      }
+      .support-tech_subtitle {
+        @include p();
+      }
+      &_img {
+        position: absolute;
+        right: 20px;
+        top: 90px;
+      }
+    }
+    .support-banner {
+      margin-top: 50px;
+      width: $width;
+      height: 400px;
+      background-image: url(../../img/Banner1.png);
+      background-repeat: no-repeat;
+      &_title {
+        padding: 30px;
+        @include h2();
+        color: #ffff;
+        font-size: 22px;
+      }
+      .support-banner_list {
+        display: flex;
+        color: white;
+        list-style: none;
+
+        justify-content: left;
+        margin-left: 30px;
+        gap: 100px;
+        h2 {
+          @include h2();
+          color: rgba(255, 205, 45, 1);
+          font-size: 35px;
+        }
+        p {
+          @include p();
+          color: #ffff;
+          opacity: 1;
+        }
+      }
+      .support-banner_itm {
+        list-style: none;
+        @include text();
+        color: #ffff;
+        margin-left: 220px;
+        margin-top: 20px;
+      }
+      .support-banner_itm li::before {
+        padding: 10px;
+        content: "\2022";
+        color: rgba(255, 205, 45, 1);
+        font-weight: bold;
+        display: inline-block;
+        margin-left: -10em;
+        font-size: 1.3em;
+        width: 0.7em;
+      }
+    }
+  }
+}

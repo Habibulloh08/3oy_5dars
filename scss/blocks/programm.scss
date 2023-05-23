@@ -1,0 +1,96 @@
+.program {
+  padding: 50px 0 150px 0;
+  margin: 0 auto;
+  .container {
+    position: relative;
+    @include container();
+    .program-title {
+      @include text();
+    }
+    .program-list {
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+
+      li {
+        width: 256px;
+        height: 190px;
+        background-color: $bacgrounColor;
+        margin: 10px;
+        padding: 30px;
+        background-image: url(../../icon/Oval.png);
+        background-repeat: no-repeat;
+        background-position: top 19px left 19px;
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+
+        p {
+          margin-top: 40px;
+        }
+        .program-list_subtitle {
+          color: rgba(50, 96, 203, 1);
+        }
+      }
+      #program-list_itm {
+        background-color: rgba(63, 109, 214, 1);
+        border-radius: 4px;
+        color: #ffff;
+        #img {
+          width: 28px;
+        }
+      }
+    }
+    .program-title_itm {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    .program-card {
+      display: flex;
+      justify-content: space-around;
+
+      .program-card_list {
+        list-style: none;
+      }
+      .program-card_list li::before {
+        content: "\2022";
+        color: rgba(255, 205, 45, 1);
+        font-weight: bold;
+        display: inline-block;
+        margin-left: -9em;
+        font-size: 1.3em;
+        width: 0.7em;
+      }
+      .program-card_list2 {
+        list-style: none;
+      }
+      .program-card_list2 li::before {
+        content: "\2022";
+        color: rgba(255, 205, 45, 1);
+        font-weight: bold;
+        display: inline-block;
+        margin-left: -10em;
+        font-size: 1.3em;
+        width: 0.7em;
+      }
+      .program-card_list3 {
+        list-style: none;
+      }
+      .program-card_list3 li::before {
+        content: "\2022";
+        color: rgba(255, 205, 45, 1);
+        font-weight: bold;
+        display: inline-block;
+        margin-left: -10em;
+        font-size: 1.3em;
+        width: 0.7em;
+      }
+    }
+    .program-img {
+      position: absolute;
+      right: 200px;
+    }
+  }
+}

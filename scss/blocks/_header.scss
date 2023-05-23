@@ -1,0 +1,60 @@
+@import "../global.scss";
+
+header {
+  margin: 0 auto;
+
+  .container {
+    width: 1300px;
+    margin: 0 auto;
+    padding: 0 50px 0;
+    // border: $border;
+  }
+
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .nav-logo {
+      width: 50%;
+      display: flex;
+      align-items: center;
+      list-style: none;
+
+      .nav-logo_list {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        justify-content: space-between;
+        cursor: pointer;
+
+        li {
+          margin: 30px;
+          @include text();
+        }
+      }
+    }
+
+    .nav-list {
+      width: 50%;
+      // border: $border;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      list-style: none;
+      cursor: pointer;
+
+      li {
+        @include text();
+      }
+      &_btn {
+        width: 112px;
+        height: 40px;
+        border: 1px solid #d7ddea;
+        background: white;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+    }
+  }
+}

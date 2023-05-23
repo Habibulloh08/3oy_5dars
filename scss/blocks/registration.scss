@@ -1,0 +1,199 @@
+.registr {
+  padding: 50px 0 150px 0;
+  margin: 0 auto;
+  background:$bacgrounColor;
+  .container {
+    @include container();
+    .registr-title {
+      @include h2();
+      margin-bottom: 30px;
+      p {
+        @include p();
+        margin-top: -30px;
+      }
+    }
+    .registr-block {
+      display: flex;
+      gap: 50px;
+      .registr-block_card1 {
+        width: 540px;
+        height: 587px;
+        border-radius: 4px;
+        text-align: center;
+        background-color:#ffffff;
+        .registr-card1_list {
+          list-style: none;
+          display: flex;
+
+          .registr-card1_itm {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            background: #eff5ff;
+            width: 180px;
+            height: 64px;
+            border: 1px solid #d7ddea;
+            display: flex;
+            p {
+              @include p();
+            }
+          }
+          .registr-card1_itm img {
+            width: 30px;
+          }
+          .registr-card1_itm:hover {
+            background: #ffffff;
+            border-radius: 4px 4px 0px 0px;
+            width: 200px;
+            margin-top: 5px;
+            // margin-bottom: 20px;
+            box-shadow: 10px 5px 15px grey;
+            p {
+              font-family: "OpenSans";
+              font-size: 20px;
+              line-height: 24px;
+              color: #282828;
+              opacity: 1;
+            }
+          }
+        }
+        .registr-card1_box {
+          background: #ffffff;
+          border-radius: 0px 0px 4px 4px;
+          border: 1px solid white;
+          .registr-card1_title {
+            margin-top: 20px;
+            margin-left: 20px;
+            @include h2();
+            font-size: 18px;
+          }
+          .registr-card1_line {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            @include h2();
+            font-size: 18px;
+            gap: 30px;
+            margin-top: 20px;
+            margin-left: 20px;
+          }
+          .span-left {
+            margin-left: 250px;
+          }
+          .registr-card1_text {
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            margin-left: -10px;
+            margin-top: 20px;
+          }
+        }
+      }
+      .registr-block_card2 {
+        width: 544px;
+        height: 587px;
+        border-radius: 4px;
+        text-align: center;
+        background-color:#ffffff;
+        .registr-card2_title {
+          margin-bottom: 30px;
+          margin-top: 10px;
+        }
+        .registr-card2_input {
+          width: 496px;
+          height: 64px;
+          background: $bacgrounColor;
+          padding-left: 10px;
+          border: none;
+          margin-bottom: 40px;
+        }
+        .input1 {
+          width: 236px;
+          height: 64px;
+          border: none;
+          border: 1px solid #d7ddea;
+          border-radius: 4px;
+          padding-left: 10px;
+          border-radius: 4px;
+        }
+        .input2 {
+          width: 236px;
+          height: 64px;
+          background: $bacgrounColor;
+          margin-left: 10px;
+          padding-left: 10px;
+          border: none;
+          border-radius: 4px;
+        }
+        .input3 {
+          width: 236px;
+          height: 64px;
+          background: $bacgrounColor;
+          padding-left: 10px;
+          border: none;
+          margin-top: 45px;
+          border-radius: 4px;
+        }
+        .input4 {
+          width: 236px;
+          height: 64px;
+          background: $bacgrounColor;
+          margin-left: 10px;
+          padding-left: 10px;
+          border: none;
+          border-radius: 4px;
+        }
+        #c {
+          width: 24px;
+          height: 24px;
+          background-color: rgba(255, 205, 45, 1);
+          margin-top: 35px;
+        }
+        .label {
+          font-size: 20px;
+          font-family: "Open Sans";
+          font-style: normal;
+          font-weight: 400;
+          line-height: 20px;
+          color: #747c8b;
+        }
+        .registr-card2_low {
+          background: linear-gradient(45deg, #3f6dd6 0%, #2755c1 99.88%);
+          border-radius: 0px 0px 4px 4px;
+          width: 544px;
+          height: 128px;
+          margin-top: 50px;
+          display: flex;
+          justify-content: space-around;
+          list-style: none;
+          align-items: center;
+          h2 {
+            font-family: "Open Sans";
+            font-style: normal;
+            font-weight: 300;
+            font-size: 26px;
+            line-height: 40px;
+            color: #ffffff;
+          }
+          p {
+            font-family: "Open Sans";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+
+            color: #ffffff;
+          }
+          .registr-card2_btn{
+            width: 136px;
+            height: 56px;
+            border-radius: 4px;
+            background: #FFCD2D;
+            border:none;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}

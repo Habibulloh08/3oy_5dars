@@ -1,0 +1,21 @@
+.footer-end{
+    margin: 0 auto;
+        background: #292B30;
+        width: $width;
+        height: 97px;
+        
+        .container{
+            @include container();
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+            padding-top: 50px;
+            color:white;
+        }
+        .footer-end-logo{
+            display: flex;
+            align-items:center;
+            gap: 20px;
+            cursor: pointer;
+        }
+}

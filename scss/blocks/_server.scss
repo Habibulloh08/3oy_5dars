@@ -1,0 +1,81 @@
+.server {
+  padding: 50px 0 100px 0;
+  margin: 0 auto;
+  //   background-color: #fbf0f4;
+  .container {
+    @include container();
+    // background-color:white;
+    padding: 0 50px 0;
+
+    .server-block {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      // align-items:center;
+      padding-left: 30px;
+      border: 1px solid #d7ddea;
+      border-radius: 4px;
+      width: 1120px;
+      height: 400px;
+      position: relative;
+
+      // background-color:white;
+
+      .server-content {
+
+        h2 {
+          @include h2();
+        }
+        p {
+          @include p();
+        }
+      }
+      .server-card {
+        display: flex;
+        justify-content: space-around;
+
+        .server-list {
+          list-style: none;
+        }
+        .server-list li::before {
+          content: "\2022";
+          color: rgba(255, 205, 45, 1);
+          font-weight: bold;
+          display: inline-block;
+          margin-left: -9em;
+          font-size: 1.3em;
+          width: -1em;
+        }
+        .server-list2 {
+          list-style: none;
+        }
+        .server-list2 li::before {
+          content: "\2022";
+          color: rgba(255, 205, 45, 1);
+          font-weight: bold;
+          display: inline-block;
+          margin-left: -10em;
+          font-size: 1.3em;
+          width: 0.7em;
+        }
+        .server-list3 {
+          list-style: none;
+        }
+        .server-list3 li::before {
+          content: "\2022";
+          color: rgba(255, 205, 45, 1);
+          font-weight: bold;
+          display: inline-block;
+          margin-left: -10em;
+          font-size: 1.3em;
+          width: 0.7em;
+        }
+      }
+      .server-img {
+        position: absolute;
+        right: -5px;
+        top: 30px;
+      }
+    }
+  }
+}

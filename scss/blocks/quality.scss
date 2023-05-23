@@ -1,0 +1,35 @@
+.quality {
+  padding: 50px 0 150px 0;
+  margin: 0 auto;
+  .container {
+    @include container();
+    .quality-list {
+      display: flex;
+      list-style: none;
+      justify-content: space-around;
+    }
+    .quality-list li {
+      width: 256px;
+      height: 96px;
+      border: 1px solid #d7ddea;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 22px;
+    }
+    .quality-list_span{
+        color:rgba(60, 105, 211, 1);
+    }
+    .quality-block_list{
+        display: flex;
+        list-style: none;
+        gap: 20px;
+    }
+  }
+}
